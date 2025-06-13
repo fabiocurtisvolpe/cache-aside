@@ -1,0 +1,99 @@
+type: collection.insomnia.rest/5.0
+name: fabio
+meta:
+  id: wrk_23c545fe35364cfebb9b316c02804a81
+  created: 1748544907769
+  modified: 1749485782628
+collection:
+  - url: http://localhost:8080/customers/1/orders
+    name: List orders
+    meta:
+      id: req_82e284d81bae4230976a3378d1aa52ac
+      created: 1748544937737
+      modified: 1748544983738
+      isPrivate: false
+      sortKey: -1748544937737
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/authenticade
+    name: Authenticade
+    meta:
+      id: req_3e2d1db3d45347a19aae5d9ae4c58a4e
+      created: 1749485802306
+      modified: 1749487325210
+      isPrivate: false
+      sortKey: -1749485802306
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    authentication:
+      type: basic
+      useISO88591: false
+      disabled: false
+      username: username
+      password: password
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/private/list-category/true
+    name: ListCategory
+    meta:
+      id: req_80ce9daaf8bf45fc95746a4dee1cfe47
+      created: 1749487335514
+      modified: 1749636786728
+      isPrivate: false
+      sortKey: -1749487335514
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJyZWRpc0p3dCIsInN1YiI6InVzZXJuYW1lIiwiZXhwIjoxNzQ5NjcyNzc4LCJpYXQiOjE3NDk2MzY3NzgsInNjb3BlIjoiIn0.VJI270qzm_Y_cFJtCsvgZkpJGCxY8-g-iDxs_5kEckcmLfqT3v5kgTbs1TOga_IEo8-hU2d2wU2r1ZfU07cKJaMQqTzmss8kgTwA4Z0cbJwj9yQ1dl_Y0uAs0ZB86oq8kHEwqT4Boi0JtPI79NYD1YC6uyljSYZZ7WTaGCKEL7R7Cu9aC60dROWGKIz1byMbLCgbdr99auMW6LCxMudhQiJNJbAhSd8punEQbir__DFN7VZv7OOm5JkJQ1bCmryyJiL1IltOkyINLSiYx40teWmywrK6CLXYWL4cOxW_E4z0xEeAZxx_L8p5AEFDX9LXIZ2TRzXy_2saXDD7GtGgwQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9b8c4f3adff70dcd5e7bc1f0443ab71dd3ffe311
+    created: 1748544907775
+    modified: 1749487273776
+  cookies:
+    - key: JSESSIONID
+      value: 14F6D0F5697C9DB3AA62FD4979E9115F
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-06-09T16:41:13.775Z
+      lastAccessed: 2025-06-09T16:41:13.775Z
+      id: 24677c24-4175-4487-82bf-844357ed4e5e
+environments:
+  name: Base Environment
+  meta:
+    id: env_9b8c4f3adff70dcd5e7bc1f0443ab71dd3ffe311
+    created: 1748544907772
+    modified: 1748544907772
+    isPrivate: false
